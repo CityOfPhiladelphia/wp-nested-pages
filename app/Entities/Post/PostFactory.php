@@ -57,6 +57,7 @@ class PostFactory
 				'post_title' => sanitize_text_field($title),
 				'post_status' => sanitize_text_field($data['_status']),
 				'post_author' => sanitize_text_field($data['post_author']),
+				'post_category' => array(strval($data['post_category'])),
 				'post_parent' => sanitize_text_field($data['parent_id']),
 				'post_type' => $post_type,
 				'menu_order' => $menu_order

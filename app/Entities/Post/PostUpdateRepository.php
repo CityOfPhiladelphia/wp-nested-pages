@@ -313,7 +313,7 @@ class PostUpdateRepository
 			foreach($data['post_category'] as $cat) {
 				if ( $cat !== 0 ) $cats[] = (int) $cat;
 			}
-			wp_set_post_terms($data['post_id'], $cats, 'category', $append_taxonomies);
+			wp_set_post_categories($data['post_id'], $data['post_category'], $append_taxonomies);
 		}
 	}
 
