@@ -19,6 +19,7 @@ jobs:
         uses: thedoctor0/zip-release@master
         with:
           filename: "wp-nested-pages-phila-${{ steps.bump_version.outputs.next-version }}.zip"
+          exclusions: '*.git*'
       - name: Deploy to s3
         env: 
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
