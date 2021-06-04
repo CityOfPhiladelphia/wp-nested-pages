@@ -21,6 +21,9 @@ if ( $wpml && $current_lang ) $searchLabel .= ' (' . $this->integrations->plugin
 		<li>
 			<a href="#draft" class="np-toggle-publish"><?php _e('Draft', 'wp-nested-pages'); ?></a>
 		</li>
+		<li>
+			<a href="#private" class="np-toggle-publish"><?php _e('Private', 'wp-nested-pages'); ?></a>
+		</li>
 
 		<li> |
 			<?php if ( !$this->listing_repo->isSearch() ) : ?>

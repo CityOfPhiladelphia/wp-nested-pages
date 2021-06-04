@@ -38,7 +38,8 @@
 				<option value="publish"><?php _e( 'Published' ); ?></option>
 			<?php endif; ?>
 				<option value="draft"><?php _e( 'Draft' ); ?></option>
-			</select>
+				<option value="private"><?php _e( 'Private' ); ?></option>
+      </select>
 		</div>
 
 		<?php 

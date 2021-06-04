@@ -403,6 +403,7 @@ class Listing
 
 				// Published?
 				if ( $this->post->status == 'publish' ) echo ' published';
+        if ( $this->post->status == 'private' ) echo ' private';
 				if ( $this->post->status == 'draft' ) echo ' draft';
 				
 				// Hidden in Nested Pages?

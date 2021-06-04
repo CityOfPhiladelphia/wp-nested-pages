@@ -89,7 +89,7 @@ class PostRepository
 			'post_type' => $post_type,
 			'posts_per_page' => -1,
 			'post__in' => $ids,
-			'post_status' => array('publish', 'draft')
+			'post_status' => array('publish', 'draft', 'private')
 		]);
 		if ( $page_query->have_posts() ) : $c = 0; while ( $page_query->have_posts() ) : $page_query->the_post();
 			global $post;

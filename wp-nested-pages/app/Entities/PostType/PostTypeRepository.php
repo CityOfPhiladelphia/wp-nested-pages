@@ -476,6 +476,8 @@ class PostTypeRepository
 			'other' => [
 				'pending' => __('Pending Review', 'wp-nested-pages'),
 				'draft' => __('Draft', 'wp-nested-pages'),
+        'private' => __('Private', 'wp-nested-pages'),
+
 			]
 		];
 		if ( $custom_statuses ) :
