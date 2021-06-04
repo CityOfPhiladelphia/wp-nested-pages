@@ -1988,7 +1988,7 @@ NestedPages.QuickEditPost = function()
 	// Add Status Class
 	plugin.addStatusClass = function()
 	{
-		var statuses = ['published', 'draft', 'pending', 'future'];
+		var statuses = ['published', 'draft', 'pending', 'future', 'private'];
 		for ( i = 0; i < statuses.length; i++ ){
 			$(plugin.row).removeClass(statuses[i]);
 		}

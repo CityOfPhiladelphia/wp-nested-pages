@@ -103,7 +103,7 @@ class PostFactory
 		$first_new_id = $new_posts[0]['id'];
 		$last_new_id = $new_posts[count($new_posts) - 1]['id'];
 
-		$sql = "UPDATE `$wpdb->posts` SET menu_order = menu_order+%d WHERE post_parent = %d AND (post_status = 'publish' OR post_status = 'draft') AND (post_type = '%s'";
+		$sql = "UPDATE `$wpdb->posts` SET menu_order = menu_order+%d WHERE post_parent = %d AND (post_status = 'publish' OR post_status = 'draft' OR post_status = 'private') AND (post_type = '%s'";
 		if ( $post_type == 'page' ) $sql .= " OR post_type = 'np-redirect'";
 		$sql .= ") AND (menu_order >= %d) ORDER BY menu_order;";
 

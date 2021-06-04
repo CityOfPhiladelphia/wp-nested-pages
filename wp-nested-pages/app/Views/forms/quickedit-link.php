@@ -32,6 +32,8 @@
 			<?php endif; ?>
 				<option value="pending"><?php _e( 'Pending Review' ); ?></option>
 				<option value="draft"><?php _e( 'Draft' ); ?></option>
+        <option value="private"><?php _e( 'Private' ); ?></option>
+
 			</select>
 		</div>
 

@@ -31,6 +31,8 @@
 			<?php endif; ?>
 				<option value="pending"><?php _e( 'Pending Review', 'wp-nested-pages' ); ?></option>
 				<option value="draft"><?php _e( 'Draft', 'wp-nested-pages' ); ?></option>
+        <option value="private"><?php _e( 'Private', 'wp-nested-pages' ); ?></option>
+
 			</select>
 		</div>
 
